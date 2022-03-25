@@ -1,0 +1,1253 @@
+/* GENERAL STYLES ---------------------------------------------------------------------------*/
+a, abbr, body, acronym, address, applet, article,
+aside, audio, b, big, blockquote canvas, caption, cite, code, dd, del, 
+details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, 
+form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, 
+iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, 
+output, p, pre, q, s, samp, section, small, span, strike, strong, sub, 
+summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video{ margin: 0; padding: 0; border: 0; vertical-align: baseline }
+
+*, *:after, *:before{ -webkit-box-sizing: border-box; box-sizing: border-box;font-family: 'Open Sans', sans-serif;}
+::selection {
+    color: #FFF;
+    background:#83b645;
+  }
+.header-container{
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.container{
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0 25px;
+}
+.bg-img{
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color:#3b3b3b;
+    line-height: 1.222;
+}
+h1{
+    color: #ffffff;
+    text-align: center;
+    font-size: 72px;
+    letter-spacing: 3.6px;
+    margin-bottom: 18px;
+}
+h2{
+    font-size: 44px;
+    text-align: center;
+}
+h3{font-size: 18px;}
+p{
+    font-size: 16px; /* 18, 16 14, 15 */
+    color:#222121;
+    line-height: 1.75;
+    font-family: 'Open Sans';
+    font-weight: 400;}
+a{text-decoration: none;}
+/*-------------------------------------------------------------------------------------------*/
+
+/*HEADER-------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+.site-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 11px;
+    z-index: 999;
+    width: 100%;
+}
+.site-header.green{
+    background-color: #dcebcd;
+}
+.header-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*LOGO---------------------------------------------------------------------------------------*/
+.site-logo{
+    margin-right:0px;
+}
+.logo{width:135px;}
+/*NAVIGATION BAR-----------------------------------------------------------------------------*/
+.site-nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0 -15px;
+}
+.site-nav ul li{
+    padding: 0 15px;
+    text-align: right;
+}
+.site-nav .site-link{
+    font-size: 16px;
+    font-weight: 600;
+    color: #222121;
+    font-family: "Open Sans";
+}
+.site-nav .site-link.active{
+    color: #83b645;
+    font-weight: 600;
+    border-bottom: 2px solid #83b645;
+}
+.site-nav .site-link:hover{
+    color: #83b645;
+    font-weight: 600;
+    border-bottom:2px solid #83b645;
+}
+.site-nav .site-link:focus{
+    color: #83b645;
+    font-weight: 600;
+    border-bottom:2px solid #83b645;
+}
+.site-nav .nav-btn{
+    padding: 0 5px;
+}
+.site-nav .link-btn{
+    border: 1px solid #83b645;
+    color: #83b645;
+    height: 37px;
+    line-height: 37px;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 5px 22px;
+    border-radius: 4px;
+    background-color: #ffffff;
+}
+.site-nav .link-btn:hover{
+    background-color: #83b645;
+    color: #ffffff;
+}
+.site-nav .link-btn:focus{
+    background-color: #83b645;
+    color: #ffffff;
+}
+.site-nav .link-btn.active{
+    background-color: #83b645;
+    color: #ffffff;
+}
+/*HAMBURGER----------------------------------------------------------------------------------*/
+.hamburger{
+    display: none;
+    position: relative;
+    z-index: 1;
+}
+.hamburger span{
+    display: block;
+    position: relative;
+    width: 40px;
+    height: 5px;
+    margin-bottom: 5px;
+    background-color: black;
+    border-radius: 5px;
+}
+
+
+/*SECTION 1: SLIDER HOME BANNER--------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+.home-banner{
+    padding-top: 82px;
+}
+.slider-inner{
+    padding: 16% 0 11% 0; 
+}
+.slider-inner .container .para-content{
+    max-width: 642px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.slider-inner .container .para-content p{
+    color: #ffffff;
+    text-align: center;
+    font-size: 18px;
+}
+/* slick dots edit*/
+.home-banner .slider-main .slick-dots{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    bottom: 37px;
+}
+.home-banner .slider-main .slick-dots li button{
+    padding: 0;
+    display: block;
+    width: 16px;
+    height: 16px;
+    border: none;
+    border-radius: 100%;
+    background-color: #fafafa;
+    border: 2px solid #83b645;
+}
+.home-banner .slider-main .slick-dots li button::before{
+    content: ' ';
+}
+.home-banner .slider-main .slick-dots li.slick-active button {
+    background-color: #83b645;}
+.home-banner .slider-main .slick-dotted.slick-slider{
+    margin: 0;
+}
+.home-banner .slider-main .left-arrow{
+    left: 20px;
+    background-image: url('/images/Home/arrow-white.svg');
+    transform:rotate(180deg);
+    width: 50px;
+    height: 20px;
+    background-repeat: no-repeat;
+    border: none;
+    background-color:transparent;
+    cursor: pointer;
+    z-index: 1;
+}
+.home-banner .slider-main .right-arrow{
+    right: 20px;
+    background-image: url('/images/Home/arrow-white.svg');
+    width: 50px;
+    height: 20px;
+    background-repeat: no-repeat;
+    border: none;
+    background-color:transparent;
+    cursor: pointer;
+    z-index: 999;
+}
+
+
+/*SECTION 2: WEOLCOME NIVESHAAY--------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+.welcome-niveshaay{
+    text-align: center;
+    padding: 62px 0 95px 0;
+}
+.welcome-niveshaay .container{
+    padding: 0 65px;
+}
+.welcome h2{
+    margin-bottom: 20px;
+}
+.welcome .para-content{
+    margin-bottom: 38px;
+}
+.welcome-links ul{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: -10px;
+}
+.welcome-links ul li{
+    color: #83b645;
+    margin-bottom: 10px;
+}
+.welcome-links ul li a{
+    color: #83b645;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+/*SECTION 3: OUR RESEARCH--------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+.our-research{
+    background-color: #FAFAFA;
+    padding: 90px 0 105px 0;
+}
+.research h2{
+    margin-bottom: 25px;
+}
+.research-main{
+    display: flex;
+    justify-content: space-between;
+}
+.research-item{
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    padding: 0 10px;
+}
+
+.research-img-container{
+    position:relative;
+    max-width: 100%;
+    padding-bottom:54%;
+}
+.research-img-container img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+.research-content{
+    background-color: #FFF;
+    max-width: 100%;
+    padding: 22px 17px;
+    border: 1px solid #e1e1e1;
+    box-shadow: 0 0 20px rgba(74, 121, 18, 0.15);
+}
+.research-content h3{
+    font-family: 'Open sans';
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+.research-content .para-content p{
+    font-size: 15px;
+    color: #888888;
+    text-align: left;
+    line-height: 1.46;
+}
+.research-content .reseacrh-link{
+    font-size: 15px;
+    color: #83b645;
+    text-align: left;
+    line-height: 1.46;
+}
+.research-content .reseacrh-link:hover{
+    border-bottom: 2px solid #83b645;
+}
+
+
+/*SECTION 4: PICK YOUR SMALLCASE-------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+.pick-smallcase{
+    padding: 88px 0 98px 0;
+}
+.smallcase-top h2{
+    margin-bottom: 13px;
+}
+.smallcase-top .para-content p{
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #81878c;
+}
+.smallcase-top{
+    margin-bottom: 30px;
+}
+
+.card-main{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.card-item{
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    padding: 0 10px;
+    
+}
+.card-inner{
+    padding: 30px 23px;
+    max-width: 100%;
+    height: 100%;
+    
+    box-shadow: 0 0 40px rgba(74, 121, 18, 0.3);
+}
+.card-img-container{
+    margin-bottom: 26px;
+}
+.card-info{}
+
+.info.block{
+    display: inline-block;
+}
+.info.block.spacing{
+    margin-right: 22%;
+}
+.info{
+    margin-bottom: 26px;
+    text-align: left;
+    text-transform: uppercase;
+}
+.info.fees{
+    margin-bottom: 24px;
+}
+.info-title{
+    display: block;
+    font-size: 14px;
+    color:#888888;
+    margin-bottom: 9px;
+    
+} 
+.info-value{
+    display: block;
+    color: #83b645;
+    font-weight: 700;
+    font-size: 20px;
+    
+}
+.line-break{
+    color: 1px solid #f6f3f3;
+    margin-bottom: 2px;
+}
+.card-content{
+    height: 100%;
+}
+.card-content h3{
+    margin-bottom: 18px;
+    font-size: 20px;
+}
+.card-content .para-content{
+    margin-bottom: 35px;
+    max-width: 380px;
+}
+.card-content .para-content p{
+    font-size: 15px;
+    line-height: 1.46;
+    color: #222121;
+}
+.card-content .green-btn{
+    text-transform: uppercase;
+    background-color: #83b645;
+    color: #FFF;
+    font-weight: 700;
+    font-size: 18px;
+    border: 1px solid #83b645;
+    border-radius: 4px;
+    line-height: 52px;
+    padding: 15px 78px;
+    text-align: center;
+}
+.card-content .green-btn:hover{
+    background-color: #FFF;
+    color: #83b645;
+    transition: 0.5s;
+}
+.card-content .green-btn:focus{
+    background-color: #FFF;
+    color: #83b645;
+    transition: 0.5s;
+}
+/*-------------------------------------------------------------------------------------------*/
+
+/*SECTION 5:---------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+.client-say{
+    background-color: #FAFAFA;
+    padding: 90px 0 90px 0;
+}
+.client-say .container h2{
+    margin-bottom: 28px;
+}
+.client-say-slider-main{
+    margin: 0 -15px;
+}
+.client-say-slider-item{
+    margin:0 15px;
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+.client-say-slider-inner{
+    background-color: #FFF;
+    max-width: 588px;
+    margin: 0 auto;
+    padding: 30px 25px;
+    text-align: center;
+    border: 1px solid e1e1e1;
+    box-shadow: 3px 5px 8px rgba(0, 0, 0, 0.05);
+    
+}
+.client-say-img-container{
+    text-align: center;
+    margin-bottom: 8px;
+}
+.client-say-img-container img{
+ border-radius: 50%;
+ width: 70px;
+ height: 70px;
+ margin: -65px auto 0;
+ /* z-index: 999; */
+}
+
+.client-say-content .para-content{
+    font-style: italic;
+    font-size: 18px;
+    line-height: 1.55;
+    margin-bottom: 16px;
+}
+.client-say-content .client-name{
+    display: block;
+    font-family: "Playfair Display";
+    font-weight: 700;
+    font-size: 18px;
+    color: #83b645;
+    margin-bottom: 5px;
+}
+.client-say-content .meta{
+    display: block;
+    font-size: 14px;
+    color: #3b3b3b;
+    font-family: "Open Sans";
+}
+.slide-arrow{
+    position: absolute;
+    top:50%;
+    margin-top: -15px;
+}
+.client-say .container .client-say-slider-main .left-arrow{
+    left: -50px;
+    background-image: url('/images/Home/arrow-grey.svg');
+    transform:rotate(180deg);
+    width: 50px;
+    height: 20px;
+    background-repeat: no-repeat;
+    border: none;
+    background-color:transparent;
+    cursor: pointer;
+    /* z-index: 1; */
+}
+.client-say .container .client-say-slider-main .right-arrow{
+    right: -50px;
+    background-image: url('/images/Home/arrow-grey.svg');
+    width: 50px;
+    height: 20px;
+    background-repeat: no-repeat;
+    border: none;
+    background-color:transparent;
+    cursor: pointer;
+    /* z-index: 1; */
+}
+/*dots ..*/
+.client-say .container .client-say-slider-main .slick-dots{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    bottom: -35px;
+}
+.client-say .container .client-say-slider-main .slick-dots li button{
+                padding: 0;
+                display: block;
+                width: 16px;
+                height: 16px;
+                border: none;
+                border-radius: 100%;
+                background-color: #fafafa;
+                border: 2px solid #83b645;
+}
+.client-say .container .client-say-slider-main .slick-dots li button::before{
+    content: ' ';
+}
+.client-say .container .client-say-slider-main .slick-dots li.slick-active button {
+    background-color: #83b645;}
+.client-say .container .client-say-slider-main .slick-dotted.slick-slider{
+    margin: 0;
+}
+
+/*SECTION 6: --------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+.the-news{
+    padding: 90px 0 35px 0;
+}
+
+.the-news .container h2{
+    margin-bottom: 80px;
+}
+/*arrow edits*/
+.the-news .container .news-slider-main .left-arrow{
+    left: -50px;
+    background-image: url('/images/Home/arrow-grey.svg');
+    transform:rotate(180deg);
+    width: 50px;
+    height: 20px;
+    background-repeat: no-repeat;
+    border: none;
+    background-color:transparent;
+    cursor: pointer;
+}
+.the-news .container .news-slider-main .right-arrow{
+    right: -50px;
+    background-image: url('/images/Home/arrow-grey.svg');
+    width: 50px;
+    height: 20px;
+    background-repeat: no-repeat;
+    border: none;
+    background-color:transparent;
+    cursor: pointer;
+} 
+.news-slider-main.slick-initialized .slick-slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*dot edits*/
+ 
+.the-news .container .news-slider-main .slick-dots{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    bottom: -80px;
+}
+.the-news .container .news-slider-main .slick-dots li button{
+                padding: 0;
+                display: block;
+                width: 12px;
+                height: 12px;
+                border: none;
+                border-radius: 100%;
+                background-color: #fafafa;
+                border: 2px solid #83b645;
+}
+.the-news .container .news-slider-main .slick-dots li button::before{
+    content: ' ';
+}
+.the-news .container .news-slider-main .slick-dots li.slick-active button {
+    background-color: #83b645;}
+    .the-news .container .news-slider-main .slick-dotted.slick-slider{
+    margin: 0;
+}
+/*SECTION 7: --------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+.nivesh-siksha{
+    padding: 90px 0;
+    background-color: #FAFAFA;
+}
+.nivesh-siksha .container h2{
+    margin-bottom: 30px;
+}
+.nivesh-siksha-wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -25px;
+    padding-bottom: -20px;
+}
+.siksha-content{
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0 25px;
+    margin-bottom: 20px;
+}
+.siksha-inner{
+    width: 100%;
+    height: 100%;
+    background-color: #FFF;
+    padding: 20px 42px 20px 30px;
+    border: 1px solid e1e1e1;
+    box-shadow: 3px 5px 8px rgba(0, 0, 0, 0.05);
+}
+.siksha-inner h3{
+    margin-bottom: 5px;
+    color: #83b645;
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    font-size: 22px;
+}
+.siksha-inner .para-content p{
+    font-size: 16px;
+    line-height: 1.75;
+    color: #3b3b3b;
+
+}
+
+/*SECTION 8: --------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+.complaint-status{
+    padding: 90px 0 89px 0;
+}
+.complaint-status .container h2{
+    margin-bottom: 30px;
+}
+.complaint-table .tab-main{
+    display: none;
+}
+.complaint-table .tab-main.active{
+    display: table;
+}
+.status-table-wrapper{
+    background-color: #FFF;
+    border: 1px solid #e1e1e1;
+    box-shadow: 3px 5.2px 8px 0 rgba(0, 0, 0, 0.05);
+    padding: 30px;
+}
+.table-top{
+    margin-bottom: 30px;
+}
+.status-table-wrapper .table-top h3{
+    font-size: 22px;
+    font-weight: 700;
+    display: inline-block;
+    margin-right: 15px;
+}
+.status-dropdown{
+    display: inline;
+    position: relative;
+    background-color: #FFF;
+}
+.status-dropdown select{
+    border: 1px solid #e1e1e1;
+    border-radius: 4px;
+    height: 40px;
+    font-size: 16px;
+    padding: 0px 20px;
+    color: #3b3b3b;
+    max-width: 100%;
+    appearance: none;
+    outline: none;
+    box-shadow: none;
+}
+.status-dropdown select:active, .status-dropdown select:focus{
+    outline: none;
+    box-shadow: none;
+}
+.status-dropdown select option:active{
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+/*tables*/
+/* .complaint-table .table-current-month */
+table{
+    border: 1px solid #e1e1e1;
+    font-size: 18px;
+    color: #3b3b3b;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 25px;
+    white-space: nowrap;
+    border-collapse: collapse;
+}
+ td, th{
+    text-align: center;
+    padding: 15px 10px;
+}
+ th{
+    background-color: #FAFAFA;
+    padding: 20px 8px;
+    border-bottom: 1px solid #e1e1e1;
+    font-weight: bold;
+}
+ td{
+    border-bottom: 1px solid #e1e1e1;
+}
+.grand-total{
+    background-color: #DBEAC8;
+}
+.table-annual th, .table-annual td, .table-monthly th, .table-monthly td{
+    border: none;
+}
+.status-table-wrapper .para-content a{
+    color: #83b645;
+}
+.status-table-wrapper .para-content p{
+    font-size: 14px;
+}
+.status-table-wrapper .para-content a:hover{
+    border-bottom: 1px solid #83b645;
+}
+/*SECTION FOOTER: ---------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+.site-footer{
+    
+}
+.footer-top{
+    padding: 45px 0 0 0;
+    background-color: #212121;
+    color: #FAFAFA;
+}
+.footer-top .container{
+    padding: 0 29px;
+}
+.footer-inner{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-title{
+    font-family: "Playfair Display";
+    font-weight: 700;
+    font-size: 23px;
+    color: #FFF;
+}
+
+.footer-about{
+    flex: 0 0 34.57%;
+    max-width: 34.57%;
+    padding-right: 33px;
+}
+.footer-about .footer-title{
+    margin-bottom: 30px;
+}
+.footer-about .para-content{
+    margin-bottom:20px;
+}
+.footer-about .para-content p{
+    font-size: 14px;
+    line-height: 1.78;
+    color: #FFF;
+    
+}
+.about-link{
+    border: 1px dashed #83b645;
+    border-radius: 4px;
+    display: inline-block;
+    padding: 0 12px 0 20px;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+.about-link:hover{background-color:#fff;}
+.about-link:focus{background-color:#fff;}
+.pdf-icon-container{
+    display: inline-block;
+}
+.pdf-icon-container img{
+    vertical-align: middle;
+}
+.about-link a{
+    font-size: 16px;
+    color: #83b645;
+    padding-left:10px;
+    height: 42px;
+    line-height: 42px;
+}
+.about-link a:hover{
+    font-weight: bolder;
+}
+.footer-contact ul{
+    list-style: none;
+}
+.footer-contact{
+    flex: 0 0 33.44%;
+    max-width: 33.44%;
+    padding-right: 87px;
+    
+}
+.footer-contact .contact .footer-title{
+    margin-bottom: 30px;
+}
+.contact-img-container{
+    display: inline-block;
+}
+.contact-img-container img{
+    padding-right:6px;
+    
+}
+.contact-inner ul{
+    margin-top: -5px;
+    margin-bottom: 10px;
+}
+.contact-inner li{
+    padding: 5px 0;
+}
+.contact-inner li a{
+    color: #dcebcd;
+    font-size: 14px;
+    line-height: 1.42;
+}
+.contact-inner li a:hover{
+    color:#83b645;
+}
+.contact-inner li a:focus{
+    color:#83b645;
+}
+.follow-us .footer-title{
+    margin-bottom: 28px;
+    color:#83b645;
+}
+.follow-us ul{
+    display: flex;
+    margin: 0 -15px;
+}
+.follow-us ul li{
+    padding: 0 15px;
+    margin-bottom: 35px;
+}
+.follow-us ul li a img{
+    transition: 1s;
+}
+.follow-us ul li a img:hover{
+    transform:scale(1.3);
+    z-index: 2;
+}
+.watch-video{
+    flex: 0 0 31.97%;
+    max-width: 31.97;
+    margin-bottom: -25px;
+}
+.footer-video source{
+    max-width: 369px;
+    height: 225px;
+}
+.watch-video .footer-title{
+    margin-bottom: 17px;
+}
+.footer-bottom .container{
+    padding: 26px 0 23px 0; 
+}
+.footer-bottom .container span{
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    color: #888888;
+}
+.footer-bottom .container a{
+    color: #83b645;
+}
+/* MEDIA QUERIES-----------------------------------------------------------------------------*/
+@media (max-width:1200px){
+/*SECTION HEADER: ---------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+    .hamburger{
+        display: block;
+    }
+    .hamburger.open-menu span:nth-child(1){
+        transform: translateY(10px) rotate(45deg);
+        transition: 0.5s;
+    }
+    .hamburger.open-menu span:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.open-menu span:nth-child(3){
+        transform: translateY(-10px) rotate(-45deg);
+        transition: 0.5s;
+    }
+    body.site-nav{
+        overflow: hidden;
+    }
+    .site-nav{
+        position: fixed;
+        left: -100%;
+        top:75px;
+        height: 80vh;
+        overflow-x: hidden;
+        overflow: auto;
+        width: 100%;
+        background-color: #dcebcd;
+        transition: 0.5s;
+        z-index: 999;
+        /* margin: 0 -25px; */
+    }
+    .site-nav ul{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-top: 10px;
+        padding-left: 40px;
+    }
+    .site-nav ul li{
+        padding: 0;
+        margin-bottom: 20px;
+        text-align: left;
+    }
+    .site-nav.open-menu{
+        left: 0;
+    }
+    .site-nav .nav-btn{
+        padding: 0;
+    }
+
+/*SECTION 1: ---------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+
+/*SECTION 2: ---------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+
+/*SECTION 3: ---------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+
+/*SECTION 4: ---------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+
+/*SECTION 5: ---------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+.prev-arrow{
+    display: none;}
+.next-arrow{
+    display: none;}
+
+/*SECTION 6: ---------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+
+/*SECTION 7: ---------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+
+/*SECTION 8: ---------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+
+/*SECTION FOOTER: ---------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+.footer-inner{
+    justify-content: center;
+    text-align: center;
+
+}
+.footer-about{
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0;
+}
+.footer-contact{
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding:0;
+}.watch-video{
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+}
+.follow-us ul{
+    justify-content: center;
+}
+}
+@media (max-width:992px){
+    h1{font-size: 66px;}
+    h2{font-size: 40px;}
+
+/*SECTION 1: ---------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+
+/*SECTION 2: WELCOME NIVESHAAY---------------------------------------------------------------*/
+    .welcome-links ul{
+        justify-content: center;
+    }
+/*-------------------------------------------------------------------------------------------*/
+
+/*SECTION 3: ---------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+
+/*SECTION 4: ---------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+
+/*SECTION 5: ---------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+
+/*SECTION 6: ---------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+
+/*SECTION 7: ---------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+
+/*SECTION 8: ---------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+
+/*SECTION FOOTER: ---------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+ 
+}
+@media (max-width:768px){
+    h1{font-size: 62px;}
+    h2{font-size: 38px;}
+/*SECTION 1: ---------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+.home-banner .slider-main .slick-dots{
+    bottom: 20px;
+}
+
+/*SECTION 2: WELCOME NIVESHAAY--------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+    .welcome-links ul{
+        justify-content: space-evenly;
+    }
+    .welcome-links ul li{
+        margin-bottom: 10px;
+    }
+
+/* SECTION 3: OUR RESEARCH ------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+    .research-main{
+        flex-direction: column;
+    }
+    .research-item{
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 0 25px;
+        margin-bottom: 20px;
+    }
+/* SECTION 4: PICK SMALLCASE ---------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+    .card-main{
+        flex-direction: column;
+        text-align: center;
+    }
+    .card-item{
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 0 25px;
+        margin-bottom: 20px;
+    }
+    .info{
+        text-align: center;
+    }
+    .card-content .para-content {
+        margin: 35px auto;
+    }
+
+/*SECTION 5: ---------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+
+/*SECTION 6: ---------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+.the-news .container .news-slider-main .slick-dots{
+    bottom: -60px;
+}
+
+/*SECTION 7: ---------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+.nivesh-siksha-wrapper{
+    display: flex;
+   flex-direction: column;
+   padding: 0 -50px;
+}
+.siksha-content{
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0 50px;
+}
+/*SECTION 8: ---------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+
+/*SECTION FOOTER: ---------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+.footer-about{
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0 15px;
+    text-align: left;
+}
+.footer-contact{
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-right:0 15px;
+    text-align: left;
+}
+.watch-video{
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: left;
+}
+.follow-us ul{
+    justify-content: flex-start;
+}
+}
+@media (max-width:576px){
+    h1{font-size: 52px;}
+    h2{font-size: 36px;}
+/*SECTION 1: ---------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+
+/*SECTION 2: WELCOME NIVESHAAY---------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+    .welcome-links ul{
+        list-style: none;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+/*SECTION 3: ---------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+    .research-item{
+        padding: 0 15px;
+    }
+/*SECTION 4: ---------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+
+/*SECTION 5: ---------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+
+/*SECTION 6: ---------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+
+/*SECTION 7: ---------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+.nivesh-siksha-wrapper{
+    padding: 0 -25px;
+}
+.siksha-content{
+    padding: 0 25px;
+}
+/*SECTION 8: ---------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+.table-top{
+    text-align: left;
+}
+.status-table-wrapper .table-top h3{
+    display: block;
+    margin-bottom: 20px;
+}
+.status-dropdown{
+    display: block;
+}
+
+/*SECTION FOOTER: ---------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+
+}
+
+@media (max-width: 425px){
+/*SECTION 1: ---------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+
+/*SECTION 2: ---------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+
+/*SECTION 3: ---------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+
+/* SECTION 4: PICK YOUR SMALLCASE-----------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+    .info.block.spacing{
+        margin-right: 10%;
+    }
+    .card-content .green-btn{
+        padding: 3% 10%;
+        font-size: 16px;
+    }
+/*SECTION 5: ---------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+
+/*SECTION 6: ---------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+
+/*SECTION 7: ---------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+
+/*SECTION 8: ---------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+
+/*SECTION FOOTER: ---------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+
+}
+@media (max-width:375px){
+    h1{font-size: 48px;}
+    h2{font-size: 32px;}
+/*SECTION 1:----------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+
+/*SECTION 2:----------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+
+/*SECTION 3:----------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+
+/*SECTION 4:----------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+
+/*SECTION 5:----------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+
+/*SECTION 6:----------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+
+/*SECTION 7:----------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+
+/*SECTION 8:----------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+
+/*SECTION FOOTER:----------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+
+}
+/*-------------------------------------------------------------------------------------------*/
