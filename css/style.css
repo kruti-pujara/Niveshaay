@@ -103,14 +103,14 @@ a{
     text-align: right;
     padding-right: 20px;
 }
-.site-nav .site-link{
+.site-nav ul li .site-link{
     font-size: 16px;
     font-weight: 600;
     color: #222121;
     font-family: "Open Sans";
     position: relative;
 }
-.site-nav .site-link:hover::before, .site-nav .site-link:focus::before{
+.site-nav ul li .site-link:hover::before, .site-nav ul li .site-link:focus::before{
     width: 100%;
 } 
 .site-nav .site-link::before{
@@ -284,6 +284,10 @@ a{
 .welcome-links ul li{
     color: #83b645;
     margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Playfair Display';
+    font-weight: 700;
     position: relative;
 }
 .welcome-links ul li::before{
@@ -295,13 +299,6 @@ a{
     top: 9px;
     left:-15px;
     border-radius: 50%;
-}
-.welcome-links ul li a{
-    color: #83b645;
-    font-size: 16px;
-    font-weight: 700;
-    font-family: 'Playfair Display';
-    font-weight: 700;
 }
 /*SECTION 3: OUR RESEARCH--------------------------------------------------------------------*/
 /*-------------------------------------------------------------------------------------------*/
@@ -351,6 +348,7 @@ a{
 }
 .research-content .para-content {
     margin-top: 16px;
+    margin-bottom: 15px;
 }
 .research-content .para-content p{
     font-size: 15px;
@@ -767,6 +765,7 @@ a{
     font-weight: 700;
     display: inline-block;
     margin-right: 15px;
+    margin-bottom: 15px;
 }
 .status-dropdown{
     display: inline;
@@ -1024,8 +1023,6 @@ table{
     .hamburger.open-menu span:nth-child(3){
             transform: translateY(-8px) rotate(-45deg);
             transition: all 0.5s;}
-    body.site-nav{
-            overflow: hidden;}
     .site-nav{
             position: fixed;
             left: -100%;
@@ -1129,9 +1126,9 @@ table{
     h2.nivesh-h1{
         font-size: 36px;}
     h1, h2{
-        font-size: 32px;}
+        font-size: 30px;}
     h3{
-        font-size: 20px;}
+        font-size: 16px;}
     .slider-inner .container .para-content p{
         font-size: 14px;}
 /*WELCOME NIVESHAAY================================================*/
